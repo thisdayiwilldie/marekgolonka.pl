@@ -1,1 +1,2 @@
 # marekgolonka.pl
+:)

@@ -1,0 +1,34 @@
+@import './parameters.scss';
+
+
+.home__header{
+  display:flex;
+  flex-direction: column;
+  margin-top:8rem;
+}
+
+.home__paragraph{
+  margin:2rem 0;
+}
+
+.home__section{
+  margin-top:6rem;
+}
+
+.lightbox {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (min-width:$desktop-small){
+  
+.home__header{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+  .home__header__aside{
+    max-width:40%;
+  }
+}  

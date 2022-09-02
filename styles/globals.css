@@ -25,19 +25,3 @@ a {
   }
 }
 
-
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu__list {
-  display:flex;
-}
-.menu__element {
-  list-style: none;
-}
-
-.menu__link {
-  padding:1rem;
-}

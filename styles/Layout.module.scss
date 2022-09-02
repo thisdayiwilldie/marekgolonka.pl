@@ -1,0 +1,30 @@
+@import './parameters.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:1rem 0;
+    background:red;
+  }
+  
+  .menu__list {
+    display:flex;
+  }
+  .menu__element {
+    list-style: none;
+  }
+  
+  .menu__link {
+    padding:1rem;
+  }
+  
+  
+  @media screen and (min-width:$desktop-small){
+    .header {
+      flex-direction: row;
+    }
+  
+  
+  }
+  

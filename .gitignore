@@ -1,1 +1,4 @@
-marekgolonka.pl.code-workspace
+yarn.lock
+yarn-error.log
+.vscode/sftp.json
+.gitignore

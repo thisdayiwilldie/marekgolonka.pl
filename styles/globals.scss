@@ -1,0 +1,140 @@
+@import './parameters.scss';
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background: $primary-color;
+    box-sizing: border-box;
+
+}
+
+#__next{
+  padding-top:1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height:100vh;
+
+}
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul{
+  padding:0;
+  margin:0;
+}
+ul li {
+  list-style:none;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+h1,h2,h3,h4,h5,h6,p {
+  padding:0;
+  margin:0;
+}
+// h-sizes
+h1{
+  font-size:2.825rem;
+}
+h2{
+  font-size:2.25rem;
+}
+h3{
+  font-size:1.75rem;
+}
+h4{
+  font-size:1.6rem;
+}
+
+.paragraph{
+  font-size:1.6rem;
+}
+
+/*margin: m and m-1 to m-5*/
+@for $i from 1 through 5 {
+  .m-#{$i} { margin: 0.5rem * $i; }
+}
+
+@for $i from 1 through 5 {
+  .mt-#{$i} { margin-top: 0.5rem * $i; }
+}
+
+@for $i from 1 through 5 {
+  .ml-#{$i} { margin-left: 0.5rem * $i; }
+}
+
+@for $i from 1 through 5 {
+  .mr-#{$i} { margin-right: 0.5rem * $i; }
+}
+
+@for $i from 1 through 5 {
+  .mb-#{$i} { margin-bottom: 0.5rem * $i; }
+}
+
+
+/*padding: p and p-1 to p-5*/
+@for $i from 1 through 5 {
+  .p-#{$i} { padding: 0.5rem * $i; }
+}
+
+@for $i from 1 through 5 {
+  .pt-#{$i} { padding-top: 0.5rem * $i; }
+}
+
+@for $i from 1 through 5 {
+  .pl-#{$i} { padding-left: 0.5rem * $i; }
+}
+
+@for $i from 1 through 5 {
+  .pr-#{$i} { padding-right: 0.5rem * $i; }
+}
+
+@for $i from 1 through 5 {
+  .pb-#{$i} { padding-bottom: 0.5rem * $i; }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+
+}
+
+
+
+@media screen and (min-width:$desktop-small) {
+
+  h1{
+    font-size:4rem;
+  }
+  h2{
+    font-size:3.25rem;
+  }
+  h3{
+    font-size:2.5rem;
+  }
+  h4{
+    font-size:2rem;
+  }
+}
